@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<link rel="stylesheet" href="static/ticket.css">
+</head>
+<body>
+
+<header class="site-header">
+	<nav class="navbar navbar-expand-md bg-red fixed-top">
+		<div class="container">
+		<a href="index.html" class="white-button"> <img src="static/logo.svg" alt="Logo" width="144.406" height="60">
+		  <div class="header__logo__title">ENGINEERING<br><span><b>TOMORROW</b></span></a></div>
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		  </button>
+		  <div class="collapse navbar-collapse" id="navbarToggle">
+			<!-- Navbar Right Side -->
+			<div class="navbar-nav" >
+				<a class="nav-item nav-link" href="#">Account</a>
+				<a class="nav-item nav-link" href="#">Logout</a>
+			</div>
+		  </div>
+		</div>
+	</nav>
+</header>
+
+<div class="container" style="background-color: #f2f2f2; margin-top: 150px;">
+<h3>Submit a Ticket</h3>
+  <form action="/action_page.php">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+    <label for="lname">Email</label>
+    <input type="text" id="lname" name="Email" placeholder="Your Email..">
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="australia">Slovakia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">Australia</option>
+      <option value="usa">USA</option>
+      <option value="usa">Czech Republic</option>
+      <option value="usa">Poland</option>
+    </select>
+    <pre><Tu na toto sa pozri></pre>
+     <label for="category">Category</label>
+    <select id="category" name="Category">
+      <option value="Access to Systems and Security">Access to Systems and Security</option>
+      <option value="Applications and Software">Applications and Software</option>
+      <option value="Communication and Connectivity">Communication and Connectivity</option>
+      <option value="Consulting and Training">Consulting and Training</option>
+      <option value="Generic">Generic</option>
+      <option value="IT Equipment and Accessories">IT Equipment and Accessories</option>
+      <option value="Segment specific services">Segment specific services</option>
+    </select>
+    <label for="subcategory">Subcategory</label>
+    <select id="subcategory" name="Subcategory">
+      <option value="Lorem Ipsum">Lorem Ipsum</option>
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Describe your problem.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
+</body>
+</html>
