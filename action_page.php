@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Self-service: Categories</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Self-service</title>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 <link rel="stylesheet" href="static/main.css">
 </head>
+
 <body>
 <header class="site-header">
 	<nav class="navbar navbar-expand-md bg-red fixed-top">
@@ -25,43 +26,15 @@
 		</div>
 	</nav>
 </header>
-
-
+	
 <div class="sidenav">
-  <a href="#about">About</a>
-  <button class="dropdown-btn">Categories 
-    <i class="fa fa-caret-down"></i>
-  </button>
-  <div class="dropdown-container">
-      <a href="service/access.html">Access to Systems and Security</a>
-      <a href="service/applications.html">Applications and Software</a>
-      <a href="service/communication.html">Communication and Connectivity</a>
-      <a href="service/consulting.html">Consulting and Training</a>
-      <a href="service/generic.html">Generic</a>
-      <a href="service/IT.html">IT Equipment and Accessories</a>
-      <a href="service/segment.html">Segment specific services</a>
-  </div>
+  <a href="ticket.html">Submit a Ticket</a>
+  <a href="service.html">Request a Service</a>
+  <a href="#">Manage Approvals</a>
+  <a href="help.html">View Self Help Arcticles</a>
 </div>
 
-
-
-<script>
-
-var dropdown = document.getElementsByClassName("dropdown-btn");
-var i;
-
-for (i = 0; i < dropdown.length; i++) {
-  dropdown[i].addEventListener("click", function() {
-  this.classList.toggle("active");
-  var dropdownContent = this.nextElementSibling;
-  if (dropdownContent.style.display === "block") {
-  dropdownContent.style.display = "none";
-  } else {
-  dropdownContent.style.display = "block";
-  }
-  });
-}
-</script>
+<p>Ticket submitted.</p>
 
 </body>
 </html> 
